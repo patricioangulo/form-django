@@ -1,0 +1,18 @@
+<!-- Formulario para cargar las grabaciones -->
+<div class="col-md-12 m-2">
+    <div class="card border-primary  mb-3" style="height: 19rem;">
+        <div class="card-header">Upload Files</div>
+        <div class="card-body text-primary">
+            <form method="POST" action="" enctype="multipart/form-data" id="form">
+                {% csrf_token %}
+                <div class="form-group m-3">
+
+                    <p>Select the files and the click on load</p>
+                    <input required name="files" type="file" accept="audio/wav" multiple class="form-control-file  form-control-sm" id="id_file">
+                    <br>
+                    <button type="submit " class="btn btn-outline-primary m-3 btn-sm " id="btn-load">Load</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
